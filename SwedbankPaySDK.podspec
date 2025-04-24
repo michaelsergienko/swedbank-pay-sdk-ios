@@ -27,4 +27,8 @@ The Swedbank Pay iOS SDK enables simple embedding of Swedbank Pay Checkout to an
   s.resources = 'SwedbankPaySDK/Resources/**/*'
   
   s.frameworks = 'UIKit', 'WebKit'
+  s.pod_target_xcconfig = {
+  'DEFINES_MODULE' => 'YES',
+  'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+}
 end
